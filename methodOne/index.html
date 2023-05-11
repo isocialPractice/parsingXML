@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Parsing XML</title>
+ 
+ <style>
+  nav {
+   width:100%;
+   background: black;
+  }
+  ul li {
+   display: inline-block;
+   position: relative;   
+   padding: 20px;
+  }
+  ul li a {
+   color:white;
+  }
+  main {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px 50px;   
+   top: 0px;
+  }  
+  div#parse div {
+   display: inline-flex;
+   position: relative;
+   margin-top: 10px;
+  }
+  section {
+   display: inline-block;
+   position: relative;
+   max-width: 450px;
+   margin: 5px 20px;
+  }
+  section ol li {
+   top: 0px;
+  }
+  section img {
+   max-width: 400px;
+   min-height: 100px;
+   max-height: 250px;
+   margin-inline: inherit;
+  }  
+  footer {
+   display: block;
+   position: relative;
+   bottom: 0;
+   border-top: 1px solid black;
+  }
+ </style> 
+</head>
+
+<body>
+<!-- Dummy navigation. -->
+ <div>
+  <nav>
+   <ul style="display: inline">
+    <li><a href="Link1.html">Link 1</a></li>
+    <li><a href="Link2.html">Link 2</a></li>
+    <li><a href="Link3.html">Link 3</a></li>
+    <li><a href="Link4.html">Link 4</a></li>
+   </ul>
+  </nav>
+ </div>
+
+ <main>
+  <div>
+   <h1>Parse XML Exercise</h1>
+   <p>Page content parsed using AJAX.</p>
+  </div>
+  <div id="parse">
+   
+  </div>
+ </main>
+
+ <footer> 
+  <p>Footer message.</p>
+ </footer>
+
+
+<script src="script.js"></script>
+<script>
+ // Call AJAX in external script.js
+ parse3ListItems("file.xml");
+</script>
+
+</body>
+</html>
