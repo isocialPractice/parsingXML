@@ -114,3 +114,5 @@ function parse3ListItems(xmlFile) {
   }, 100);
  };
 }
+
+ parse3ListItems("file.xml");
