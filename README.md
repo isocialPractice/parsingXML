@@ -8,5 +8,5 @@ php -S localhost:8000
 ```
 
 ## Preview Method One:
-[Method One Preview](https://htmlpreview.github.io/?https://github.com/isocialPractice/parsingXML/methodOne/blob/main/index.html)
+[Method One Preview](https://htmlpreview.github.io/?https://github.com/isocialPractice/parsingXML/blob/main/methodOne/index.html)
 
