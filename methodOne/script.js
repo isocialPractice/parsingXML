@@ -114,13 +114,3 @@ function parse3ListItems(xmlFile) {
   }, 100);
  };
 }
-
- var checkURL = location.href;
- if (checkURL.indexOf("htmlpreview") > -1) {
-  var serverScript = "https://practicing.xyz/gitHub/parsingXML/methodOne/script.js"
-  var docscript = document.createElement("script");
-  docscript.src = serverScript;
-  document.body.appendChild(docscript);
- } else {
-  parse3ListItems("file.xml");
- } 
