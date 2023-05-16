@@ -9,6 +9,9 @@ var parse =
 
 // Function called in html.
 function parse3ListItems(xmlFile) {
+ if (xmlFile=="s") {
+  xmlFile = "https://practicing.xyz/gitHub/parsingXML/methodOne/file.xml";
+ }
  // AJAX call - change file.xml with your xml.
  var xmlhttps = new XMLHttpRequest();
  xmlhttps.onreadystatechange = function() {
