@@ -89,9 +89,13 @@
   var docscript = document.createElement("script");
   docscript.src = serverScript;
   document.body.appendChild(docscript);
-  setTimeout(function() {parse3ListItems("file.xml");}, 1500);
+  
+  var docfunc = document.createElement("script");
+  var func = 'parse3ListItems("file.xml")';
+  docfunc.innerHTML = func;
+  document.body.appendChild(docfunc);
  } else {
-  parse3ListItems("file.xml");
+   parse3ListItems("file.xml");
  } 
 </script>
 
