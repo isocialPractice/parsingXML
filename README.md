@@ -7,6 +7,3 @@ To view/debug contents download directory, then in the terminal change to the di
 php -S localhost:8000
 ```
 
-## Preview Method One:
-[Method One Preview](https://htmlpreview.github.io/?https://github.com/isocialPractice/parsingXML/blob/main/methodOne/index.html)
-

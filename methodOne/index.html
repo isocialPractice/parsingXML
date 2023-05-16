@@ -82,21 +82,9 @@
 
 
 <script src="script.js"></script>
-<script>
- var checkURL = location.href;
- if (checkURL.indexOf("htmlpreview") > -1) {
-  var serverScript = "https://practicing.xyz/gitHub/parsingXML/methodOne/script.js"
-  var docscript = document.createElement("script");
-  docscript.src = serverScript;
-  document.body.appendChild(docscript);
-  
-  var docfunc = document.createElement("script");
-  var func = 'parse3ListItems("s")';
-  docfunc.innerHTML = func;
-  document.body.appendChild(docfunc);
- } else {
-   parse3ListItems("file.xml");
- } 
+<script> 
+ // CHANGE WITH YOUR XML FILE.
+ parse3ListItems("file.xml");
 </script>
 
 
