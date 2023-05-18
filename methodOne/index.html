@@ -84,7 +84,14 @@
 <script src="script.js"></script>
 <script> 
  // CHANGE WITH YOUR XML FILE.
- parse3ListItems("file.xml");
+ var checkURL = location.href;
+ if (checkURL.indexOf("?") > -1) {
+  setTimeout(function() {
+   parse3ListItems("file.xml");
+  }, 1000);
+ } else {
+  parse3ListItems("file.xml");
+ }
 </script>
 
 
