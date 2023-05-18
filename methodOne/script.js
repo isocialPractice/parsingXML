@@ -28,7 +28,7 @@ function parse3ListItems(xmlFile, remote) {
     console.log("-----Loaded-----");
     
     remoteStoreXML = this.responseXML;
-    remoteXMLSection = storeXML.getElementsByTagName("pre")[0];
+    remoteXMLSection = remoteStoreXML.getElementsByTagName("pre")[0];
     remoteXMLSectionText - remoteXMLSection.innerText;
     remoteParser = new DOMParser();
     remoteXMLSectionTextParser = remoteParser.parseFromString(remoteXMLSectionText, "text/xml");
