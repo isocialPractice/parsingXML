@@ -8,17 +8,36 @@ var parse =
  document.getElementById("parse");
 
 // Function called in html.
-function parse3ListItems(xmlFile) {
+function parse3ListItems(xmlFile, remote) {
+ if (remote == undefined) remote = 0;
  // AJAX call - change file.xml with your xml.
  var xmlhttps = new XMLHttpRequest();
  xmlhttps.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
    var storeXML, xmlSection, xmlSectionLen;
-   storeXML = this.responseXML;
-   xmlSection = storeXML.getElementsByTagName("section");
-   xmlSectionLen = xmlSection.length;
-   for (i = 0; i < xmlSectionLen; i++) {
-    noteFunction(this);
+   if (remote == 0) {
+    storeXML = this.responseXML;
+    xmlSection = storeXML.getElementsByTagName("section");
+    xmlSectionLen = xmlSection.length;
+    for (i = 0; i < xmlSectionLen; i++) {
+     noteFunction(this);
+    }
+   } else {
+    var remoteStoreXML, remoteXMLSection, remoteXMLSectionText, 
+        remoteParser, remoteXMLSectionTextParser;
+    consol.log("-----Loaded-----");
+    
+    remoteStoreXML = this.responseXML;
+    remoteXMLSection = storeXML.getElementsByTagName("pre")[0];
+    remoteXMLSectionText - remoteXMLSection.innerText;
+    remoteParser = new DOMParser();
+    remoteXMLSectionTextParser = remoteParser.parseFromString(remoteXMLSectionText, "text/xml");
+    // maybe
+    xmlSection = remoteXMLSectionTextParser.getElementsByTagName("section");
+    xmlSectionLen = xmlSection.length;
+    for (i = 0; i < xmlSectionLen; i++) {
+     noteFunction(this);
+    }    
    }
   }
  };
