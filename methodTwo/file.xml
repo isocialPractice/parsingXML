@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+ <section>
+  <one>../img/1.jpg</one>
+  <two>The Rapid Stream</two>
+  <three>The stream in the image below is rapid.</three>
+ </section>
+  <section>
+  <one>../img/2.jpg</one>
+  <two>The Calm Pond</two>
+  <three>A calm pond is a body of water that is peaceful and tranquil, with little or no disturbance from wind or waves. It often provides a serene and relaxing atmosphere for activities such as fishing, boating, or simply enjoying nature</three>
+ </section>
+  <section>
+  <one>../img/3.jpg</one>
+  <two>Calm Sea</two>
+  <three>A calm sea is characterized by gentle waves, smooth surface, and a serene atmosphere. The water is usually clear and reflective, with little to no disturbance from wind or currents. It creates a peaceful and tranquil environment for those who enjoy water activities or simply want to relax by the shore.</three>
+ </section>
+  <section>
+  <one>../img/4.jpg</one>
+  <two>Pond in Front of Mountain</two>
+  <three>The pond in front of the mountain is a picturesque scene, with crystal clear water reflecting the majestic peaks behind it. The tranquil setting is often accompanied by the peaceful sounds of nature, making it a perfect spot for relaxation and reflection.</three>
+ </section>
+  <section>
+  <one>../img/5.jpg</one>
+  <two>Desert Island From Desert Island</two>
+  <three>The deserted island in the ocean is a serene place with lush greenery and sandy beaches, surrounded by crystal clear blue water. Its beauty can be admired from another deserted island nearby, offering a breathtaking view of the untouched paradise.</three>
+ </section>
+  <section>
+  <one>../img/6.jpg</one>
+  <two>Rock Out of Glacier</two>
+  <three>A rock sticking out of a glacier is a protruding feature that can either be a boulder embedded in the ice or a rocky outcrop that has been exposed as the glacier moves and melts. These rocks can provide clues to the geographical history of the area and are often used by geologists to study glacial movement and erosion.</three>
+ </section>
+</root>
