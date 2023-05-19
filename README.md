@@ -1,4 +1,5 @@
 # Parse XML Exercise Method One
+[Preview Method One](https://isocialpractice.github.io/parsingXML/methodOne/index.html)
 
 Change the content as needed. The focus is the AJAX function. This can be customized and applied differently. These files are just to get you started.
 
