@@ -4,7 +4,7 @@
 Change the content as needed. The focus is the AJAX function. This can be customized and applied differently. These files are just to get you started. <br>
 
 # Parse XML Exercise Method Two
-[Preview Method One](https://isocialpractice.github.io/parsingXML/methodTwo/index.html)
+[Preview Method Two](https://isocialpractice.github.io/parsingXML/methodTwo/index.html)
 
 A slight modification from method one, but same rules apply; change the content as needed. The focus is the AJAX function. This can be customized and applied differently. These files are just to get you started.
 
