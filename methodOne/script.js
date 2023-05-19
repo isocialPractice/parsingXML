@@ -14,31 +14,13 @@ function parse3ListItems(xmlFile, remote) {
  var xmlhttps = new XMLHttpRequest();
  xmlhttps.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-   var storeXML, xmlSection, xmlSectionLen;
-   if (remote == 0) {
-    storeXML = this.responseXML;
-    xmlSection = storeXML.getElementsByTagName("section");
-    xmlSectionLen = xmlSection.length;
-    for (i = 0; i < xmlSectionLen; i++) {
-     noteFunction(this);
-    }
-   } else {
-    var remoteStoreXML, remoteXMLSection, remoteXMLSectionText, 
-        remoteParser, remoteXMLSectionTextParser;
-    console.log("-----Loaded-----");
-    
-    remoteStoreXML = this.responseXML;
-    remoteXMLSection = remoteStoreXML.getElementsByTagName("pre")[0];
-    remoteXMLSectionText - remoteXMLSection.innerText;
-    remoteParser = new DOMParser();
-    remoteXMLSectionTextParser = remoteParser.parseFromString(remoteXMLSectionText, "text/xml");
-    // maybe
-    xmlSection = remoteXMLSectionTextParser.getElementsByTagName("section");
-    xmlSectionLen = xmlSection.length;
-    for (i = 0; i < xmlSectionLen; i++) {
-     noteFunction(this);
-    }    
-   }
+   var storeXML, xmlSection, xmlSectionLen;   
+   storeXML = this.responseXML;
+   xmlSection = storeXML.getElementsByTagName("section");
+   xmlSectionLen = xmlSection.length;
+   for (i = 0; i < xmlSectionLen; i++) {
+    noteFunction(this);
+   }    
   }
  };
 
